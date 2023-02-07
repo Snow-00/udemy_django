@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form Page</title>
+</head>
+
+<body>
+    <h3>Registration Form</h3>
+
+    <form method="POST">
+        <div>
+            <label>First Name</label>
+            <input name="fname" type="text"/>
+        </div>
+        <br/>
+        
+        <div>
+            <label>Last Name</label>
+            <input name="lname"/>
+        </div>
+        <br/>
+
+        <div>
+            <label>Password</label>
+            <!-- name is like label for the backend to read -->
+            <input name="password" type="password"/> 
+        </div>
+        <br/>
+
+        <div>
+            <label>Country</label>
+            <!-- 
+                value  is the data that's being sent to the backend 
+
+                selected is to make the option default no matter the order
+            -->
+            <select name="country">
+                <option value="" selected>--Select Your Country--</option>
+                <option value="singapore">Singapore</option>
+                <option value="australia">Australia</option>
+                <option value="america">America</option>
+            </select>
+        </div>
+        <br/>
+
+        <div>
+            <label>Technical Skills</label>
+            <!--
+                multiple is to make the options to be able to be selected > 1
+
+                size is to set how much the box will display the options
+            -->
+            <select name="skills" multiple size="2">
+                <option value="Java" selected>Java</option>
+                <option value="DOT NET">Dot Net</option>
+                <option value="Angular">Angular</option>
+            </select>
+        </div>
+        <br/>
+
+        <div>
+            <label>Gender</label>
+            <!--
+                name is mandatory with each input having the same name so the user only able to choose 1
+            -->
+            <input type="radio" name="gender"/>Male
+            <input type="radio" name="gender"/>Female
+        </div>
+        <br/>
+
+        <div>
+            <label>Hobbies</label>
+            <input name="hobby" type="checkbox"/>Playing
+            <input name="hobby" type="checkbox"/>Dancing
+            <input name="hobby" type="checkbox"/>Reading
+        </div>
+        <br/>
+
+        <div>
+            <label>Profile Photo</label>
+            <input name="file" type="file"/>
+        </div>
+        <br/>
+
+        <div>
+            <label>City</label>
+            <input name="city" type="text" list="cities"/>
+            <datalist id="cities">
+                <option value="Hydera"></option>
+                <option value="Harvard"></option>
+                <option value="Bueno"></option>
+                <option value="Bing"></option>
+            </datalist>
+        </div>
+        <br/>
+
+        <div>
+            <input type="submit" value="Register">
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,67 @@
+/*
+=============================================== 
+PS: once u've set a style to something, u can't change it even if u use universal in the later code 
+===============================================
+*/
+
+
+/* element selector */
+/* h1
+{
+    color: blue;
+    text-align: center;
+} */
+
+/* id selector */
+/* h1#h1id1
+{
+    color: blue;
+    text-align: center;
+} */
+
+p#p1id1
+{
+    color: white;
+    background-color: blue;
+}
+
+/* class selector */
+/* h1.h1class2
+{
+    color: red;
+} */
+
+/* group selector */
+/* h1.h1class2, h1#h1id1
+{
+    color: red;
+    text-align: center;
+} */
+
+/* universal selector */
+/* * */
+/* {
+    text-align: center;
+    color: blue;
+} */
+
+/* group selector1 */
+h1#h1id1,h1.h1class2
+{
+    background-color: white;
+    color: red;
+    text-align: center;
+    border-style: dashed;
+    border-color: black;
+    border-width: 5px 6px 7px 8px; /* T R B L */
+    border-radius: 40px;
+}
+
+body
+{
+    /* background-image: url('css_test.png');
+    background-repeat: repeat-x;
+    background-attachment: scroll;
+    background-color: bisque; */
+    background: bisque url(css_test.png) no-repeat fixed;
+}

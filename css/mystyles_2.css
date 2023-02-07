@@ -1,0 +1,63 @@
+/* 
+=================================================
+PS : 
+4 values mean T R B L
+3 values mean T RL B
+2 values mean TB RL
+1 value means TRBL
+font-weight doesnt work on h1,h2,...
+=================================================
+*/
+h1
+{
+    border-style: solid;
+    /* margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px; */
+    margin: 25px 50px 75px 100px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-style: italic;
+}
+
+p
+{
+    font-weight: bold;
+    font-style: italic;
+}
+
+img
+{
+    border-style: dotted;
+    border-color: red;
+    border-width: 5px;
+    margin-left: 480px;
+    height: 100px;
+}
+
+button
+{
+    padding: 10px;
+    margin-left: 500px;
+    background-color: blueviolet;
+    color: white;
+    height: 100px;
+    width: 200px;
+    font-size: 20px;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+a:hover
+{
+    font-size: 20px;
+    color: red;
+    padding: 35px;
+    border-style: solid;
+    display: block;
+}
